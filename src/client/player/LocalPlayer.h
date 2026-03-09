@@ -70,6 +70,7 @@ public:
 
 	void swing();
 	virtual void openTextEdit( TileEntity* tileEntity );
+	virtual float getWalkingSpeedModifier();
 private:
 	void calculateFlight(float xa, float ya, float za);
 	bool isSolidTile(int x, int y, int z);
@@ -99,6 +100,11 @@ private:
 	int sentInventoryItemData;
 
 	int armorTypeHash;
+
+	// sprinting
+	bool sprinting;
+	int  sprintDoubleTapTimer;
+	bool prevForwardHeld;
 };
 
 #endif /*NET_MINECRAFT_CLIENT_PLAYER__LocalPlayer_H__*/

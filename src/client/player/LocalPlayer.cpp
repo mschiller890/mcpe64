@@ -50,7 +50,10 @@ LocalPlayer::LocalPlayer(Minecraft* minecraft, Level* level, User* user, int dim
 	sentInventoryItemId(-1),
 	sentInventoryItemData(-1),
 	autoJumpEnabled(true),
-	armorTypeHash(0)
+	armorTypeHash(0),
+	sprinting(false),
+	sprintDoubleTapTimer(0),
+	prevForwardHeld(false)
 {
 	this->dimension = dimension;
 	_init();
@@ -176,6 +179,25 @@ void LocalPlayer::aiStep() {
 	if (!screenCovering)
 		input->tick(this);
 
+	// Sprint: detect W double-tap
+	{
+		bool forwardHeld = (input->ya > 0);
+		if (forwardHeld && !prevForwardHeld) {
+			// leading edge of W press
+			if (sprintDoubleTapTimer > 0)
+				sprinting = true;
+			else
+				sprintDoubleTapTimer = 7;
+		}
+		if (!forwardHeld) {
+			sprinting = false;
+		}
+		if (sprintDoubleTapTimer > 0) sprintDoubleTapTimer--;
+		prevForwardHeld = forwardHeld;
+	}
+	if (input->sneaking || abilities.flying)
+		sprinting = false;
+
     if (input->sneaking) {
         if (ySlideOffset < 0.2f) ySlideOffset = 0.2f;
     }
@@ -294,6 +316,10 @@ void LocalPlayer::setKey( int eventKey, bool eventKeyState )
 void LocalPlayer::releaseAllKeys()
 {
 	if (input) input->releaseAllKeys();
+}
+
+float LocalPlayer::getWalkingSpeedModifier() {
+	return sprinting ? 1.3f : 1.0f;
 }
 
 float LocalPlayer::getFieldOfViewModifier() {
