@@ -126,8 +126,9 @@ int main(void) {
 	glfwSetWindowSizeCallback(window, window_size_callback);
 
 	glfwMakeContextCurrent(window);
-	gladLoadGLES1Loader((GLADloadproc)glfwGetProcAddress);
+	gladLoadGLES1Loader((GLADloadproc)winGLLoader);
 	glfwSwapInterval(1);
+	glPatchDesktopCompat();
 #endif
 
 	App* app = new MAIN_CLASS();

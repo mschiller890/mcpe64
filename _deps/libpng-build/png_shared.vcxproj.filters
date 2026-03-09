@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\intel\intel_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\intel\filter_sse2_intrinsics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\png.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build\pnglibconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngpriv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngdebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pnginfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\pngstruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{208ABF45-315B-3AE2-81F8-BD531CC6749E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F289B8A1-EB15-3621-9333-0C87305FED84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\auxeffectslot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\autowah.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\chorus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\compressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\convolution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\dedicated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\distortion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\echo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\effects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\equalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\fshifter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\modulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\null.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\pshifter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\reverb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\vmorpher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\extension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\listener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\call.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slot_index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\autowah.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\chorus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\compressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\convolution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\dedicated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\distortion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\echo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\equalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\fshifter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\modulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\null.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\pshifter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\reverb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\vmorpher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\panning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\loopback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\null.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wasapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\dsound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\winmm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wave.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambdec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambidefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bformatdec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bs2b.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\converter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cpu_caps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\devformat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effectslot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\except.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\biquad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\nfc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\splitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fpu_ctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mastering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\storage_formats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\tsmefilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uhjfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uiddefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse41.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\auxeffectslot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\direct_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\effects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\listener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\call.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slot_index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\x_ram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\export_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\inprogext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\loopback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\null.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wasapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\dsound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\winmm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\allpass_conv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\allpass_iir.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambidefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\async_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bformatdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bs2b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bufferline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\buffer_storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\converter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cpu_caps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\devformat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effects\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effectslot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\encoderbase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\except.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\biquad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\nfc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\splitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fmt_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fpu_ctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\front_stablizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_loader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_resource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mastering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\resampler_limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\storage_formats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\tsmefilter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uhjfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice_change.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\hrtfbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\hrtfdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\al.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\alc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\alext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\efx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\efx-presets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\778b7207d194759eb17db102ccd92f05\default_hrtf.txt.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\format.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\os.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\resources\openal32.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6BB487A5-6F82-3A93-BEB4-5C3490CC2408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{208ABF45-315B-3AE2-81F8-BD531CC6749E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A9410162-FC08-310C-A1D4-522A8CB2A474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F289B8A1-EB15-3621-9333-0C87305FED84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

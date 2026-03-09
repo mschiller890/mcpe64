@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\7b22226adfd2ab5a476460772acf4228\zlib-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\83f755c01d1191a24d46a3fbc95c61b9\zlib-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\cde430867f3e37a261b0d47d41db5a7f\zlib-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-subbuild\CMakeFiles\zlib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DDB38264-ECF0-390D-9F8F-B9961EE3DF89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

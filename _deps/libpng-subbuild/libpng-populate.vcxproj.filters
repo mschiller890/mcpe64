@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\85686460c99cbe30c124fef158a62559\libpng-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\dfaa3b41fb8701cd68769a340e7afb6b\libpng-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\69d517a83a6da53c9ec3d0cbef71830d\libpng-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-subbuild\CMakeFiles\libpng-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{68E4222C-E8AF-3005-9FE5-3B7BBF2CC5CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

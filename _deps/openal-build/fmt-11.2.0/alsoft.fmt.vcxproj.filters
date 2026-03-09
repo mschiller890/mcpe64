@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\src\format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\src\os.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\chrono.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\compile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\format-inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\ostream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\printf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\ranges.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\std.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include\fmt\xchar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\README.md" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\ChangeLog.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{208ABF45-315B-3AE2-81F8-BD531CC6749E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F289B8A1-EB15-3621-9333-0C87305FED84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\694e912f80ad38df27d28ee9d693d4f2\openal-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\a6da8d6c43be14499986f877299fba9a\openal-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\f121235437486d47b3de9ddded13a4d6\openal-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-subbuild\CMakeFiles\openal-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{24CFA294-BCFD-3921-AF23-486C1B6B8C4E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

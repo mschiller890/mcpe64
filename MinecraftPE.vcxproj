@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE04A537-E8B1-34C9-83EE-66B84388730F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MinecraftPE</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinecraftPE.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MinecraftPE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinecraftPE.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinecraftPE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinecraftPE.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MinecraftPE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinecraftPE.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MinecraftPE</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build" /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-src"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victus/Documents/GitHub/mcpe64/_deps/libpng-build/Debug/libpng16d.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Debug/OpenAL32.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/glfw-build/src/Debug/glfw3.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build/Debug/zd.dll C:/Users/victus/Documents/GitHub/mcpe64/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/victus/Documents/GitHub/mcpe64/data C:/Users/victus/Documents/GitHub/mcpe64/Debug/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>_deps\libpng-build\Debug\libpng16d.lib;_deps\openal-build\Debug\alsoft.common.lib;_deps\openal-build\Debug\OpenAL32.lib;_deps\glfw-build\src\Debug\glfw3dll.lib;ws2_32.lib;_deps\zlib-build\Debug\zd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/Debug/MinecraftPE.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/Debug/MinecraftPE.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build" /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-src"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victus/Documents/GitHub/mcpe64/_deps/libpng-build/Release/libpng16.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Release/OpenAL32.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/glfw-build/src/Release/glfw3.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build/Release/z.dll C:/Users/victus/Documents/GitHub/mcpe64/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/victus/Documents/GitHub/mcpe64/data C:/Users/victus/Documents/GitHub/mcpe64/Release/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>_deps\libpng-build\Release\libpng16.lib;_deps\openal-build\Release\alsoft.common.lib;_deps\openal-build\Release\OpenAL32.lib;_deps\glfw-build\src\Release\glfw3dll.lib;ws2_32.lib;_deps\zlib-build\Release\z.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/Release/MinecraftPE.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/Release/MinecraftPE.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build" /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-src"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victus/Documents/GitHub/mcpe64/_deps/libpng-build/MinSizeRel/libpng16.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/MinSizeRel/OpenAL32.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/glfw-build/src/MinSizeRel/glfw3.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build/MinSizeRel/z.dll C:/Users/victus/Documents/GitHub/mcpe64/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/victus/Documents/GitHub/mcpe64/data C:/Users/victus/Documents/GitHub/mcpe64/MinSizeRel/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>_deps\libpng-build\MinSizeRel\libpng16.lib;_deps\openal-build\MinSizeRel\alsoft.common.lib;_deps\openal-build\MinSizeRel\OpenAL32.lib;_deps\glfw-build\src\MinSizeRel\glfw3dll.lib;ws2_32.lib;_deps\zlib-build\MinSizeRel\z.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/MinSizeRel/MinecraftPE.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/MinSizeRel/MinecraftPE.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build" /external:I "C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-src"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;PLATFORM_DESKTOP;OPENGL_ES;NO_EGL;PLATFORM_GLFW;GLFW_DLL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\glad\include;C:\Users\victus\Documents\GitHub\mcpe64\src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-src\include;C:\Users\victus\Documents\GitHub\mcpe64\lib\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victus/Documents/GitHub/mcpe64/_deps/libpng-build/RelWithDebInfo/libpng16.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/RelWithDebInfo/OpenAL32.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/glfw-build/src/RelWithDebInfo/glfw3.dll C:/Users/victus/Documents/GitHub/mcpe64/_deps/zlib-build/RelWithDebInfo/z.dll C:/Users/victus/Documents/GitHub/mcpe64/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/victus/Documents/GitHub/mcpe64/data C:/Users/victus/Documents/GitHub/mcpe64/RelWithDebInfo/data
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>_deps\libpng-build\RelWithDebInfo\libpng16.lib;_deps\openal-build\RelWithDebInfo\alsoft.common.lib;_deps\openal-build\RelWithDebInfo\OpenAL32.lib;_deps\glfw-build\src\RelWithDebInfo\glfw3dll.lib;ws2_32.lib;_deps\zlib-build\RelWithDebInfo\z.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/RelWithDebInfo/MinecraftPE.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/RelWithDebInfo/MinecraftPE.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCXXCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeRCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeSystem.cmake;C:\Users\victus\Documents\GitHub\mcpe64\cmake\CPM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCXXCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeRCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeSystem.cmake;C:\Users\victus\Documents\GitHub\mcpe64\cmake\CPM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCXXCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeRCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeSystem.cmake;C:\Users\victus\Documents\GitHub\mcpe64\cmake\CPM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeCXXCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeRCCompiler.cmake;C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\4.1.2-msvc8\CMakeSystem.cmake;C:\Users\victus\Documents\GitHub\mcpe64\cmake\CPM.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\NinecraftApp.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\SharedConstants.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\IConfigListener.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\Minecraft.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\MouseHandler.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\OptionStrings.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\Options.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\OptionsFile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gamemode\CreativeMode.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gamemode\CreatorMode.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gamemode\GameMode.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gamemode\SurvivalMode.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\Font.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\Gui.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\GuiComponent.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\Screen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\Button.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\GButton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\GuiElement.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\GuiElementContainer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\ImageButton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\InventoryPane.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\ItemPane.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\LargeImageButton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\NinePatch.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\OptionsGroup.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\OptionsItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\OptionsPane.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\RolledSelectionListH.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\RolledSelectionListV.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\ScrolledSelectionList.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\ScrollingPane.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\Slider.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\SmallButton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\components\TextBox.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ArmorScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ChatScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ChestScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ChooseLevelScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ConfirmScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\DeathScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\FurnaceScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\InBedScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\IngameBlockSelectionScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\JoinGameScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\OptionsScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\PauseScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ProgressScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\RenameMPLevelScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ScreenChooser.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\SelectWorldScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\SimpleChooseLevelScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\StartMenuScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\TextEditScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\UploadPhotoScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\crafting\CraftingFilters.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\crafting\PaneCraftingScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\crafting\StonecutterScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\crafting\WorkbenchScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\touch\TouchIngameBlockSelectionScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\touch\TouchJoinGameScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\touch\TouchSelectWorldScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\touch\TouchStartMenuScreen.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\ChickenModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\CowModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\HumanoidModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\PigModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\QuadrupedModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\SheepFurModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\SheepModel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\geom\Cube.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\geom\ModelPart.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\model\geom\Polygon.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\particle\Particle.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\particle\ParticleEngine.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\player\LocalPlayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\player\RemotePlayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\player\input\KeyboardInput.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\player\input\touchscreen\TouchscreenInput.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\Chunk.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\EntityTileRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\GameRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\ItemInHandRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\LevelRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\RenderChunk.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\RenderList.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\Tesselator.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\Textures.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\TileRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\culling\Frustum.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\ArrowRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\ChickenRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\EntityRenderDispatcher.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\EntityRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\FallingTileRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\HumanoidMobRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\ItemRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\ItemSpriteRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\MobRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\PaintingRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\PlayerRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\SheepRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\TntRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\entity\TripodCameraRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\gles.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\ptexture\DynamicTexture.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\tileentity\ChestRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\tileentity\SignRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\tileentity\TileEntityRenderDispatcher.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\renderer\tileentity\TileEntityRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\sound\Sound.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\sound\SoundEngine.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\locale\I18n.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\main.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\nbt\Tag.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\ClientSideNetworkHandler.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\NATPunchHandler.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\NetEventCallback.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\PHPDirectoryServer2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\Packet.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\RakNetInstance.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\ServerSideNetworkHandler.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\network\command\CommandServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\CThread.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\audio\SoundSystemAL.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\input\Controller.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\input\Keyboard.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\input\Mouse.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\input\Multitouch.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\platform\time.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\BitStream.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CCRakNetUDT.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CheckSum.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CloudClient.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CloudCommon.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CloudServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\CommandParserInterface.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ConnectionGraph2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ConsoleServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DS_BytePool.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DS_ByteQueue.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DS_Table.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DataCompressor.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\DynDNS.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\EmailSender.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\EncodeClassName.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\EpochTimeToString.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\FileList.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\FileListTransfer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\FileOperations.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\FormatString.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\GetTime.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Getche.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Gets.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\GridSectorizer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\HTTPConnection.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\IncrementalReadInterface.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Itoa.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\LinuxStrings.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\LocklessTypes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\LogCommandParser.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\MessageFilter.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NatPunchthroughClient.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NatPunchthroughServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NetworkIDManager.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\NetworkIDObject.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PacketConsoleLogger.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PacketFileLogger.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PacketLogger.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PacketizedTCP.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\PluginInterface2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RPC4Plugin.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Rackspace.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakMemoryOverride.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakNetCommandParser.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakNetSocket.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakNetStatistics.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakNetTransport2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakNetTypes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakPeer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakSleep.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakString.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakThread.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\RakWString.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Rand.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ReadyEvent.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ReliabilityLayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ReplicaManager3.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\Router2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SHA1.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SecureHandshake.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SendToThread.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SignaledEvent.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SimpleMutex.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SocketLayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\StringCompressor.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\StringTable.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\SuperFastHash.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\TCPInterface.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\TableSerializer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\TeamBalancer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\TelnetTransport.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\TwoWayAuthentication.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\UDPForwarder.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\UDPProxyClient.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\UDPProxyServer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\VariadicSQLParser.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\VitaIncludes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\WSAStartupSingleton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\_FindFirst.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\gettimeofday.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\raknet\rdlmalloc.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\server\ArgumentsSettings.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\server\CreatorLevel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\server\ServerLevel.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\server\ServerPlayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\util\DataIO.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\util\Mth.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\util\PerfRenderer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\util\PerfTimer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\util\StringUtils.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\Direction.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\AgableMob.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\Entity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\EntityFactory.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\FlyingMob.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\HangingEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\Mob.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\MobCategory.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\Motive.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\Painting.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\PathfinderMob.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\SynchedEntityData.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\ai\control\MoveControl.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\Animal.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\Chicken.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\Cow.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\Pig.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\Sheep.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\animal\WaterAnimal.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\item\FallingTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\item\ItemEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\item\PrimedTnt.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\item\TripodCamera.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\Creeper.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\Monster.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\PigZombie.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\Skeleton.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\Spider.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\monster\Zombie.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\player\Inventory.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\player\Player.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\projectile\Arrow.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\entity\projectile\Throwable.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\food\SimpleFoodData.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\inventory\BaseContainerMenu.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\inventory\ContainerMenu.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\inventory\FillingContainer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\inventory\FurnaceMenu.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\ArmorItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\BedItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\DyePowderItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\HangingEntityItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\HatchetItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\HoeItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\Item.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\ItemInstance.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\PickaxeItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\ShovelItem.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\ArmorRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\FurnaceRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\OreRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\Recipe.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\Recipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\StructureRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\ToolRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\item\crafting\WeaponRecipes.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\Explosion.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\Level.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\LightLayer.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\LightUpdate.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\MobSpawner.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\Region.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\TickNextTickData.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\biome\Biome.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\biome\BiomeSource.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\chunk\LevelChunk.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\dimension\Dimension.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\CanyonFeature.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\DungeonFeature.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\LargeCaveFeature.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\LargeFeature.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\RandomLevelSource.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\feature\Feature.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\synth\ImprovedNoise.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\synth\PerlinNoise.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\levelgen\synth\Synth.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\material\Material.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\pathfinder\Path.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\ExternalFileLevelStorage.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\ExternalFileLevelStorageSource.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\FolderMethods.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\LevelData.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\LevelStorageSource.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\storage\RegionFile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\BedTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\ChestTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\CropTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\DoorTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\EntityTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\FurnaceTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\GrassTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\HeavyTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\LightGemTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\MelonTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\Mushroom.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\NetherReactor.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\NetherReactorPattern.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\SandTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\StairTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\StemTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\StoneSlabTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\TallGrass.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\Tile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\TrapDoorTile.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\entity\ChestTileEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\entity\FurnaceTileEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\entity\NetherReactorTileEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\entity\SignTileEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\level\tile\entity\TileEntity.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\world\phys\HitResult.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\AppPlatform_glfw.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\glad\src\glad.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\ZERO_CHECK.vcxproj">
+      <Project>{15F5D9BA-C671-3D49-A4F4-8D1AE7FC20B9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\OpenAL.vcxproj">
+      <Project>{B5787054-0C12-344A-AEB3-DE08E6B38781}</Project>
+      <Name>OpenAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\alsoft.common.vcxproj">
+      <Project>{A2F0034B-CCEF-3BF5-813B-A451D3CE69DE}</Project>
+      <Name>alsoft.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.vcxproj">
+      <Project>{AF3F1F11-7E4F-386E-B878-703BF3F8082F}</Project>
+      <Name>alsoft.fmt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{EF8EC14D-E0EF-3B3A-904F-777759609F97}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\libpng-build\png_shared.vcxproj">
+      <Project>{A020E1A2-DB3F-3963-B11D-89496CD5014A}</Project>
+      <Name>png_shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\zlib-build\zlib.vcxproj">
+      <Project>{1FDF9D6C-5BDD-3087-8772-01EE1931BE4D}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

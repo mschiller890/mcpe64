@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\version.h.in">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\64e4ce61e7770984ee3f404f3bf8c0c4\alsoft.build_version.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\CMakeFiles\alsoft.build_version" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6BB487A5-6F82-3A93-BEB4-5C3490CC2408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{208ABF45-315B-3AE2-81F8-BD531CC6749E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5787054-0C12-344A-AEB3-DE08E6B38781}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>OpenAL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenAL.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenAL32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenAL.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenAL32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenAL.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OpenAL32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenAL.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OpenAL32</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4324;4373</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR="Debug";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR=\"Debug\";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\alsoft.common.lib;winmm.lib;avrt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Debug/OpenAL32.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Debug/OpenAL32.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.25</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4127;4324;4373</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR="Release";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR=\"Release\";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\alsoft.common.lib;winmm.lib;avrt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Release/OpenAL32.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/Release/OpenAL32.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.25</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4127;4324;4373</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR="MinSizeRel";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR=\"MinSizeRel\";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\alsoft.common.lib;winmm.lib;avrt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/MinSizeRel/OpenAL32.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/MinSizeRel/OpenAL32.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.25</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4324;4373</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR="RelWithDebInfo";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;AL_BUILD_LIBRARY;AL_ALEXT_PROTOTYPES;ALC_API=__declspec(dllexport);AL_API=__declspec(dllexport);_WIN32;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_CONSTEXPR_MUTEX_CONSTRUCTOR;_MSVC_STL_HARDENING=1;CMAKE_INTDIR=\"RelWithDebInfo\";OpenAL_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\fmt-11.2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\alsoft.common.lib;winmm.lib;avrt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/RelWithDebInfo/OpenAL32.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/RelWithDebInfo/OpenAL32.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>1.25</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\CMakeFiles\778b7207d194759eb17db102ccd92f05\default_hrtf.txt.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating default_hrtf.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D "INPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/hrtf/Default HRTF.mhr" -D OUTPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/default_hrtf.txt -P C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/cmake/bin2h.script.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\hrtf\Default HRTF.mhr;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\bin2h.script.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating default_hrtf.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D "INPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/hrtf/Default HRTF.mhr" -D OUTPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/default_hrtf.txt -P C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/cmake/bin2h.script.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\hrtf\Default HRTF.mhr;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\bin2h.script.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating default_hrtf.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D "INPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/hrtf/Default HRTF.mhr" -D OUTPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/default_hrtf.txt -P C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/cmake/bin2h.script.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\hrtf\Default HRTF.mhr;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\bin2h.script.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating default_hrtf.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -D "INPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/hrtf/Default HRTF.mhr" -D OUTPUT_FILE=C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/default_hrtf.txt -P C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/cmake/bin2h.script.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\hrtf\Default HRTF.mhr;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\bin2h.script.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckStructHasMember.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPkgConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\OpenALConfig.cmake.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindJACK.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindOpenSL.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPortAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPulseAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_backends.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_simd.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\openal.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckStructHasMember.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPkgConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\OpenALConfig.cmake.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindJACK.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindOpenSL.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPortAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPulseAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_backends.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_simd.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\openal.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckStructHasMember.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPkgConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\OpenALConfig.cmake.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindJACK.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindOpenSL.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPortAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPulseAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_backends.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_simd.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\openal.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/victus/Documents/GitHub/mcpe64 -BC:/Users/victus/Documents/GitHub/mcpe64 --check-stamp-file C:/Users/victus/Documents/GitHub/mcpe64/_deps/openal-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckStructHasMember.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindGit.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\FindPkgConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\OpenALConfig.cmake.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindJACK.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindOpenSL.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPortAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\cmake\FindPulseAudio.cmake;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_backends.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\config_simd.h.in;C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\openal.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\auxeffectslot.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\auxeffectslot.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\buffer.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\buffer.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\debug.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\debug.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\direct_defs.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effect.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effect.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\autowah.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/autowah.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\chorus.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/chorus.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\compressor.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/compressor.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\convolution.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/convolution.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\dedicated.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/dedicated.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\distortion.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/distortion.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\echo.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/echo.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\effects.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\effects.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\equalizer.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/equalizer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\fshifter.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/fshifter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\modulator.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/modulator.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\null.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/null.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\pshifter.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/pshifter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\reverb.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/reverb.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\effects\vmorpher.cpp">
+      <ObjectFileName>$(IntDir)/al/effects/vmorpher.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\error.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\event.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\event.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\extension.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\filter.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\filter.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\listener.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\listener.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\source.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\source.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\state.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\api.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\api.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\call.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\call.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\effect.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\exception.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\exception.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slot_index.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slot_index.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slots.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\fx_slots.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\globals.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\utils.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\utils.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\al\eax\x_ram.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alc.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alu.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alu.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alconfig.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\alconfig.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\context.cpp">
+      <ObjectFileName>$(IntDir)/alc/context.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\context.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\device.cpp">
+      <ObjectFileName>$(IntDir)/alc/device.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\device.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\base.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\autowah.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/autowah.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\chorus.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/chorus.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\compressor.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/compressor.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\convolution.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/convolution.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\dedicated.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/dedicated.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\distortion.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/distortion.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\echo.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/echo.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\equalizer.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/equalizer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\fshifter.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/fshifter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\modulator.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/modulator.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\null.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/null.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\pshifter.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/pshifter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\reverb.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/reverb.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\effects\vmorpher.cpp">
+      <ObjectFileName>$(IntDir)/alc/effects/vmorpher.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\events.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\events.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\export_list.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\inprogext.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\panning.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\base.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\base.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\loopback.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\loopback.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\null.cpp">
+      <ObjectFileName>$(IntDir)/alc/backends/null.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\null.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wasapi.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wasapi.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\dsound.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\dsound.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\winmm.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\winmm.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wave.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\alc\backends\wave.h" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\default_hrtf.txt">
+    </None>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\allpass_conv.hpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\allpass_iir.hpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambdec.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambdec.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambidefs.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\ambidefs.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\async_event.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bformatdec.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bformatdec.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bs2b.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bs2b.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_defs.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_tables.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bsinc_tables.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\bufferline.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\buffer_storage.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\context.cpp">
+      <ObjectFileName>$(IntDir)/core/context.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\context.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\converter.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\converter.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cpu_caps.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cpu_caps.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_defs.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_tables.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\cubic_tables.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\devformat.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\devformat.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\device.cpp">
+      <ObjectFileName>$(IntDir)/core/device.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\device.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effects\base.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effectslot.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\effectslot.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\encoderbase.hpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\except.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\except.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\biquad.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\biquad.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\nfc.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\nfc.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\splitter.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\filters\splitter.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fmt_traits.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fpu_ctrl.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\fpu_ctrl.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\front_stablizer.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\helpers.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\helpers.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_loader.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_loader.hpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_resource.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\hrtf_resource.hpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\logging.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\logging.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mastering.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mastering.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\resampler_limits.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\storage_formats.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\storage_formats.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\tsmefilter.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\tsmefilter.hpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uhjfilter.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uhjfilter.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\uiddefs.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice.cpp" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\voice_change.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\defs.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\hrtfbase.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\hrtfdefs.h" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_c.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse2.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse3.cpp" />
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\core\mixer\mixer_sse41.cpp" />
+    <ResourceCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\resources\openal32.rc">
+      <ScanSourceForModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</ScanSourceForModuleDependencies>
+    </ResourceCompile>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\al.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\alc.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\alext.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\efx.h" />
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\include\AL\efx-presets.h" />
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\format.obj" />
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\os.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\ZERO_CHECK.vcxproj">
+      <Project>{15F5D9BA-C671-3D49-A4F4-8D1AE7FC20B9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\alsoft.build_version.vcxproj">
+      <Project>{C5EE9B2B-6713-3D87-A47F-2445C11A2FE8}</Project>
+      <Name>alsoft.build_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\alsoft.common.vcxproj">
+      <Project>{A2F0034B-CCEF-3BF5-813B-A451D3CE69DE}</Project>
+      <Name>alsoft.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.vcxproj">
+      <Project>{AF3F1F11-7E4F-386E-B878-703BF3F8082F}</Project>
+      <Name>alsoft.fmt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

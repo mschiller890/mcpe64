@@ -18,21 +18,16 @@ I've done some bad and pointless changes to the code so if someone could improve
 - [ ] Performance optimalizations
 
 ## How to Build
-1. **Open the Repository**
-   In Visual Studio 2022, open the extracted repository **as a folder, not as a project**.
-
-2. **CMake Configuration** 
-   Visual Studio should automatically detect the `CMakeLists.txt` file and generate a configuration.
-
-3. **Check Output**  
-   In the **Output** tab at the bottom, you should see:
+1. Open **Visual Studio 2022**.
+2. Select **File → Open → Folder** and choose the extracted repository.  
+   > Make sure you open it **as a folder, not as a project**.
+3. Visual Studio will automatically detect the `CMakeLists.txt` file and start generating the CMake configuration.
+4. Wait until the **Output** window shows:
    ```
    1> CMake generation finished.
    ```
-   once the configuration is complete.
-   
-4. **Set Debug Target**  
-    After CMake finishes, set `MinecraftPE.exe` as the **debug target** to start debugging.
+5. Set **`MinecraftPE.exe`** as the **debug target**.
+6. Build or run the project from Visual Studio.   
 
 ## Credits
 Original repository:  

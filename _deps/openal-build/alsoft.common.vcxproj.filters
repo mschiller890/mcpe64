@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alcomplex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\almalloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\althrd_setname.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\dynload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\filesystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\pffft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\polyphase_resampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\strutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\albit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alcomplex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alformat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\almalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alnumeric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\alstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\althrd_setname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\althreads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\altypes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\comptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\dynload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\dlopennote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\expected.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\filesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\flexarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\intrusive_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\opthelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\pffft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\phase_shifter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\polyphase_resampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\pragmadefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\ringbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\strutils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\vecmat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\common\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\algorithm" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\assert" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\byte" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\gsl" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\narrow" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\pointers" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\span" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\span_ext" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\util" />
+    <None Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-src\gsl\include\gsl\zstring" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\format.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\victus\Documents\GitHub\mcpe64\_deps\openal-build\fmt-11.2.0\alsoft.fmt.dir\$(Configuration)\os.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{208ABF45-315B-3AE2-81F8-BD531CC6749E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A9410162-FC08-310C-A1D4-522A8CB2A474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F289B8A1-EB15-3621-9333-0C87305FED84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
