@@ -10,7 +10,7 @@ OptionsGroup::OptionsGroup( std::string labelID )  {
 
 void OptionsGroup::setupPositions() {
 	// First we write the header and then we add the items
-	int curY = y + 10;
+	int curY = y + 18;
 	for(std::vector<GuiElement*>::iterator it = children.begin(); it != children.end(); ++it) {
 		(*it)->width = width - 5;
 		
@@ -23,7 +23,9 @@ void OptionsGroup::setupPositions() {
 }
 
 void OptionsGroup::render( Minecraft* minecraft, int xm, int ym ) {
-	minecraft->font->draw(label, (float)x + 2, (float)y, 0xffffffff, false);
+	float padX = 10.0f;
+	float padY = 5.0f;
+	minecraft->font->draw(label, (float)x + padX, (float)y + padY, 0xffffffff, false);
 	super::render(minecraft, xm, ym);
 }
 
