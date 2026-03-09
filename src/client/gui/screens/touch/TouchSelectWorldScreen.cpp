@@ -394,7 +394,7 @@ void SelectWorldScreen::tick()
 {
 	if (_state == _STATE_CREATEWORLD) {
 		#if defined(RPI)
-			std::string levelId = getUniqueLevelName("perf");
+			std::string levelId = getUniqueLevelName("World");
 			//int seed = Util::hashCode("/r/Minecraft");
 			LevelSettings settings(getEpochTimeS(), GameType::Creative);
 			minecraft->selectLevel(levelId, levelId, settings);
@@ -402,7 +402,7 @@ void SelectWorldScreen::tick()
 			minecraft->setScreen(new ProgressScreen());
 			_hasStartedLevel = true;
 		#elif defined(PLATFORM_DESKTOP)
-			std::string name = getUniqueLevelName("perf");
+			std::string name = getUniqueLevelName("World");
 			minecraft->setScreen(new SimpleChooseLevelScreen(name));
 		#else
 			int status = minecraft->platform()->getUserInputStatus();
