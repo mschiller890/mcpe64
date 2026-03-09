@@ -1,0 +1,108 @@
+# Build output
+build/
+out/
+bin/
+lib/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!cmake/CPM.cmake
+
+# Compiled object files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# CMake generated
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_CPack_Packages/
+*.cbp
+
+# Visual Studio
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+.vs/
+ipch/
+x64/
+x86/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
+# Xcode
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+*.apk
+*.aab
+*.ap_
+local.properties
+.gradle/
+project/.gradle/
+project/android/bin/
+project/android/gen/
+project/android/obj/
+project/android_java/bin/
+project/android_java/gen/
+project/android_java/obj/
+project/android/libs/*.so
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# CLion / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse CDT
+.project
+.cproject
+.settings/
+
+# Logs
+*.log
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
