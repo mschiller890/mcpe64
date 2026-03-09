@@ -319,7 +319,7 @@ void LocalPlayer::releaseAllKeys()
 }
 
 float LocalPlayer::getWalkingSpeedModifier() {
-	return sprinting ? 1.3f : 1.0f;
+	return sprinting ? 1.4f : 1.0f;
 }
 
 float LocalPlayer::getFieldOfViewModifier() {

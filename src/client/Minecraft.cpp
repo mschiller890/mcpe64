@@ -31,6 +31,7 @@
 #include "gui/Screen.h"
 #include "gui/Font.h"
 #include "gui/screens/RenameMPLevelScreen.h"
+#include "gui/screens/ConsoleScreen.h"
 #include "sound/SoundEngine.h"
 #endif
 #include "../platform/CThread.h"
@@ -724,6 +725,9 @@ void Minecraft::tickInput() {
 			#if defined(PLATFORM_DESKTOP)
 				if (key == Keyboard::KEY_E) {
 					screenChooser.setScreen(SCREEN_BLOCKSELECTION);
+				}
+				if (!screen && key == Keyboard::KEY_T && level) {
+					setScreen(new ConsoleScreen());
 				}
 				if (!screen && key == Keyboard::KEY_O || key == 250) {
 					releaseMouse();

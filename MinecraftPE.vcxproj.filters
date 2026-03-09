@@ -121,6 +121,9 @@
     <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ConfirmScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\ConsoleScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\victus\Documents\GitHub\mcpe64\src\client\gui\screens\DeathScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

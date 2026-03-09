@@ -136,6 +136,11 @@ if(PLATFORM STREQUAL "PLATFORM_GLFW")
     list(APPEND SOURCES "src/AppPlatform_glfw.cpp")
 endif()
 
+# Explicitly list files added after the initial glob so they are always included
+list(APPEND SOURCES
+    "src/client/gui/screens/ConsoleScreen.cpp"
+)
+
 add_executable(${PROJECT_NAME} 
     ${SOURCES}
     "glad/src/glad.c"

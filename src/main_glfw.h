@@ -32,6 +32,20 @@ int transformKey(int glfwkey) {
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
 	if(action == GLFW_REPEAT) return;
 
+	if (key == GLFW_KEY_F11 && action == GLFW_PRESS) {
+		GLFWmonitor* monitor = glfwGetWindowMonitor(window);
+		if (monitor) {
+			// Currently fullscreen → go windowed
+			glfwSetWindowMonitor(window, NULL, 80, 80, 854, 480, 0);
+		} else {
+			// Currently windowed → go fullscreen on primary monitor
+			GLFWmonitor* primary = glfwGetPrimaryMonitor();
+			const GLFWvidmode* mode = glfwGetVideoMode(primary);
+			glfwSetWindowMonitor(window, primary, 0, 0, mode->width, mode->height, mode->refreshRate);
+		}
+		return;
+	}
+
 	Keyboard::feed(transformKey(key), action);
 }
 
