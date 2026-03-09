@@ -237,7 +237,7 @@ void SoundEngine::play(const std::string& name, float x, float y, float z, float
 	if (sounds.get(name, sound)) {
 		float dist = SOUND_DISTANCE;
 		if (volume > 1) dist *= volume;
-		soundSystem.playAt(sound, x, y, z, volume, pitch);
+		soundSystem.playAt(sound, x-_x, y-_y, z-_z, volume, pitch);
 	}
 }
 void SoundEngine::playUI(const std::string& name, float volume, float pitch) {
