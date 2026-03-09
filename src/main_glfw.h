@@ -7,6 +7,8 @@
 #include "SharedConstants.h"
 
 #include <cstdio>
+#include <chrono>
+#include <thread>
 #include "platform/input/Keyboard.h"
 #include "platform/input/Mouse.h"
 #include "platform/input/Multitouch.h"
@@ -141,7 +143,7 @@ int main(void) {
 
 	glfwMakeContextCurrent(window);
 	gladLoadGLES1Loader((GLADloadproc)winGLLoader);
-	glfwSwapInterval(1);
+	glfwSwapInterval(0);
 	glPatchDesktopCompat();
 #endif
 
@@ -154,11 +156,23 @@ int main(void) {
 	g_app->setSize(appContext.platform->getScreenWidth(), appContext.platform->getScreenHeight());
 
 	// Main event loop
+	using clock = std::chrono::steady_clock;
 	while(!glfwWindowShouldClose(window) && !app->wantToQuit()) {
+		auto frameStart = clock::now();
+
 		app->update();
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+
+		glfwSwapInterval(((MAIN_CLASS*)app)->options.vsync ? 1 : 0);
+		if(((MAIN_CLASS*)app)->options.limitFramerate) {
+			auto frameEnd = clock::now();
+			auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(frameEnd - frameStart);
+			auto target = std::chrono::microseconds(33333); // ~30 fps
+			if(elapsed < target)
+				std::this_thread::sleep_for(target - elapsed);
+		}
 	}
 
 	delete app;

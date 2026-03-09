@@ -5,6 +5,7 @@ const char* OptionStrings::Multiplayer_ServerVisible   = "mp_server_visible_defa
 
 const char* OptionStrings::Graphics_Fancy              = "gfx_fancygraphics";
 const char* OptionStrings::Graphics_LowQuality         = "gfx_lowquality";
+const char* OptionStrings::Graphics_Vsync              = "gfx_vsync";
 
 const char* OptionStrings::Controls_Sensitivity        = "ctrl_sensitivity";
 const char* OptionStrings::Controls_InvertMouse        = "ctrl_invertmouse";

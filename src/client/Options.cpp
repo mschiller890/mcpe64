@@ -34,6 +34,7 @@ void Options::initDefaultValues() {
 	bobView = true;
 	anaglyph3d = false;
 	limitFramerate = false;
+	vsync = true;
 	fancyGraphics = true;//false;
 	ambientOcclusion = false;
 	if(minecraft->supportNonTouchScreen())
@@ -144,7 +145,8 @@ const Options::Option
 	Options::Option::USE_TOUCHSCREEN	 (16, "options.usetouchscreen", false, true),
 	Options::Option::USE_TOUCH_JOYPAD	 (17, "options.usetouchpad", false, true),
 	Options::Option::DESTROY_VIBRATION   (18, "options.destroyvibration", false, true),
-	Options::Option::PIXELS_PER_MILLIMETER(19, "options.pixelspermilimeter", true, false);
+	Options::Option::PIXELS_PER_MILLIMETER(19, "options.pixelspermilimeter", true, false),
+	Options::Option::VSYNC               (20, "options.vsync",             false, true);
 
 /* private */
 const float Options::SOUND_MIN_VALUE = 0.0f;
@@ -235,6 +237,9 @@ void Options::update()
 				fancyGraphics = false;
 			}
 		}
+		// Graphics extras
+		if (key == OptionStrings::Graphics_Vsync)
+			readBool(value, vsync);
 		// Game
 		if (key == OptionStrings::Game_DifficultyLevel) {
 			readInt(value, difficulty);
@@ -305,6 +310,7 @@ void Options::save()
 	addOptionToSaveOutput(stringVec, OptionStrings::Controls_UseTouchScreen, useTouchScreen);
 	addOptionToSaveOutput(stringVec, OptionStrings::Controls_UseTouchJoypad, isJoyTouchArea);
 	addOptionToSaveOutput(stringVec, OptionStrings::Controls_FeedbackVibration, destroyVibration);
+	addOptionToSaveOutput(stringVec, OptionStrings::Graphics_Vsync, vsync);
 // 
 // 	static const Option MUSIC;
 // 	static const Option SOUND;
