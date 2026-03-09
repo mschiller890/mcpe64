@@ -139,6 +139,7 @@ endif()
 # Explicitly list files added after the initial glob so they are always included
 list(APPEND SOURCES
     "src/client/gui/screens/ConsoleScreen.cpp"
+    "src/client/gui/screens/UsernameScreen.cpp"
 )
 
 add_executable(${PROJECT_NAME} 

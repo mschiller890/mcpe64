@@ -29,6 +29,7 @@ public:
 private:
 	Touch::THeader* bHeader;
 	ImageButton* btnClose;
+	Button* btnChangeUsername;
 	std::vector<Touch::TButton*> categoryButtons;
 	std::vector<OptionsPane*> optionPanes;
 	OptionsPane* currentOptionPane;

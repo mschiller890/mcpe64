@@ -18,6 +18,7 @@
 //#include "world/level/storage/FolderMethods.h"
 #ifndef STANDALONE_SERVER
 #include "client/gui/screens/StartMenuScreen.h"
+#include "client/gui/screens/UsernameScreen.h"
 #endif
 #include "client/player/LocalPlayer.h"
 #ifndef STANDALONE_SERVER
@@ -110,6 +111,9 @@ void NinecraftApp::init()
 #ifndef STANDALONE_SERVER
 	LOGI("This: %p\n", this);
 	screenChooser.setScreen(SCREEN_STARTMENU);
+	if (options.username.empty()) {
+		setScreen(new UsernameScreen());
+	}
 #else
 	user->name = "Server";
 	hostMultiplayer();

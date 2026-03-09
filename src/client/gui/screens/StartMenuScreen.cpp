@@ -1,4 +1,5 @@
 #include "StartMenuScreen.h"
+#include "UsernameScreen.h"
 #include "SelectWorldScreen.h"
 #include "ProgressScreen.h"
 #include "JoinGameScreen.h"
@@ -38,6 +39,10 @@ StartMenuScreen::~StartMenuScreen()
 
 void StartMenuScreen::init()
 {
+	if (minecraft->options.username.empty()) {
+		return; // tick() will redirect to UsernameScreen
+	}
+
 	buttons.push_back(&bHost);
 	buttons.push_back(&bJoin);
 	//buttons.push_back(&bTest);
@@ -106,6 +111,10 @@ void StartMenuScreen::setupPositions() {
 }
 
 void StartMenuScreen::tick() {
+	if (minecraft->options.username.empty()) {
+		minecraft->setScreen(new UsernameScreen());
+		return;
+	}
 	_updateLicense();
 }
 

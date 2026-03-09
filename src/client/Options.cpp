@@ -45,7 +45,7 @@ void Options::initDefaultValues() {
 	//useMouseForDigging = true;
 
 	//skin     = "Default";
-	username = "Steve";
+	username = "";
 	serverVisible = true;
 
 	keyUp	 = KeyMapping("key.forward", Keyboard::KEY_W);
@@ -299,6 +299,8 @@ void Options::load()
 void Options::save()
 {
 	StringVector stringVec;
+	// Login
+	addOptionToSaveOutput(stringVec, OptionStrings::Multiplayer_Username, username);
 	// Game
 	addOptionToSaveOutput(stringVec, OptionStrings::Multiplayer_ServerVisible, serverVisible);
 	addOptionToSaveOutput(stringVec, OptionStrings::Game_DifficultyLevel, difficulty);
@@ -354,6 +356,7 @@ void Options::save()
 	//    System.out.println("Failed to save options");
 	//    e.printStackTrace();
 	//}
+	optionsFile.save(stringVec);
 }
 void Options::addOptionToSaveOutput(StringVector& stringVector, std::string name, bool boolValue) {
 	std::stringstream ss;
@@ -369,6 +372,9 @@ void Options::addOptionToSaveOutput(StringVector& stringVector, std::string name
 	std::stringstream ss;
 	ss << name << ":" << intValue;
 	stringVector.push_back(ss.str());
+}
+void Options::addOptionToSaveOutput(StringVector& stringVector, std::string name, const std::string& strValue) {
+	stringVector.push_back(name + ":" + strValue);
 }
 
 std::string Options::getMessage( const Option* item )

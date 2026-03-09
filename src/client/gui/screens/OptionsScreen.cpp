@@ -1,6 +1,7 @@
 #include "OptionsScreen.h"
 
 #include "StartMenuScreen.h"
+#include "UsernameScreen.h"
 #include "DialogDefinitions.h"
 #include "../../Minecraft.h"
 #include "../../../AppPlatform.h"
@@ -11,6 +12,7 @@
 OptionsScreen::OptionsScreen()
 : btnClose(NULL),
   bHeader(NULL),
+  btnChangeUsername(NULL),
   selectedCategory(0) {
 }
 
@@ -22,6 +24,10 @@ OptionsScreen::~OptionsScreen() {
 	if(bHeader != NULL) {
 		delete bHeader,
 		bHeader = NULL;
+	}
+	if(btnChangeUsername != NULL) {
+		delete btnChangeUsername;
+		btnChangeUsername = NULL;
 	}
 	for(std::vector<Touch::TButton*>::iterator it = categoryButtons.begin(); it != categoryButtons.end(); ++it) {
 		if(*it != NULL) {
@@ -53,8 +59,10 @@ void OptionsScreen::init() {
 	categoryButtons.push_back(new Touch::TButton(3, "Game"));
 	categoryButtons.push_back(new Touch::TButton(4, "Controls"));
 	categoryButtons.push_back(new Touch::TButton(5, "Graphics"));
+	btnChangeUsername = new Button(10, "Username");
 	buttons.push_back(bHeader);
 	buttons.push_back(btnClose);
+	buttons.push_back(btnChangeUsername);
 	for(std::vector<Touch::TButton*>::iterator it = categoryButtons.begin(); it != categoryButtons.end(); ++it) {
 		buttons.push_back(*it);
 		tabButtons.push_back(*it);
@@ -77,6 +85,12 @@ void OptionsScreen::setupPositions() {
 	bHeader->y = 0;
 	bHeader->width = width - btnClose->width;
 	bHeader->height = btnClose->height;
+	if(btnChangeUsername != NULL) {
+		btnChangeUsername->width = categoryButtons.empty() ? 80 : categoryButtons[0]->width;
+		btnChangeUsername->height = btnClose->height;
+		btnChangeUsername->x = 0;
+		btnChangeUsername->y = height - btnChangeUsername->height;
+	}
 	for(std::vector<OptionsPane*>::iterator it = optionPanes.begin(); it != optionPanes.end(); ++it) {
 		if(categoryButtons.size() > 0 && categoryButtons[0] != NULL) {
 			(*it)->x = categoryButtons[0]->width;
@@ -104,6 +118,9 @@ void OptionsScreen::buttonClicked( Button* button ) {
 	if(button == btnClose) {
 		minecraft->options.save();
 		minecraft->screenChooser.setScreen(SCREEN_STARTMENU);
+	} else if(button == btnChangeUsername) {
+		minecraft->options.save();
+		minecraft->setScreen(new UsernameScreen());
 	} else if(button->id > 1 && button->id < 7) {
 		// This is a category button
 		int categoryButton = button->id - categoryButtons[0]->id;
