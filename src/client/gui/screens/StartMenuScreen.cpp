@@ -192,9 +192,14 @@ void StartMenuScreen::render( int xm, int ym, float a )
 	glColor4f2(1, 1, 1, 1);
 	if (Textures::isTextureIdValid(minecraft->textures->loadAndBindTexture("gui/logo/github.png")))
 		blit(2, height - 10, 0, 0, 8, 8, 256, 256);
-	drawString(font, "Kolyah35/minecraft-pe-0.6.1", 12, height - 10, 0xffcccccc);
-
-	Screen::render(xm, ym, a);
+{
+			std::string txt = "Kolyah35/minecraft-pe-0.6.1";
+			float wtxt = font->width(txt);
+			Gui::drawColoredString(font, txt, 12, height - 10, 255);
+			// underline link
+			float y0 = height - 10 + font->lineHeight - 1;
+			this->fill(12, (int)y0, 12 + (int)wtxt, (int)(y0 + 1), 0xffffffff);
+    }
 }
 
 void StartMenuScreen::_updateLicense()

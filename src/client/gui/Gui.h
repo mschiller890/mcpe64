@@ -49,6 +49,7 @@ public:
 
 	// draw a string containing simple [color]...[/color] tags; color names are matched
 	// case-insensitively and default to white. alpha is applied to each segment.
+	// draw tagged string (ignores simple [color]…[/color] tags)
 	static void drawColoredString(Font* font, const std::string& text, float x, float y, int alpha);
 	static float getColoredWidth(Font* font, const std::string& text);
 

@@ -31,8 +31,13 @@ void CreditsScreen::init() {
     _lines.clear();
     _lines.push_back("Minecraft: Pocket Edition");
     _lines.push_back("Original game by Mojang");
-    _lines.push_back("Programmers:\nmschiller890\nInviseDivine\nKolyah35");
-    _lines.push_back("[Gold color tag]Join our Discord server:[/Gold color tag] [Green color tag]url.....[/Green color tag]");
+    _lines.push_back("");
+    _lines.push_back("Programmers:");
+    _lines.push_back("mschiller890");
+    _lines.push_back("InviseDivine");
+    _lines.push_back("Kolyah35");
+    _lines.push_back("");
+    _lines.push_back("[Gold]Join our Discord server:[/Gold] [Green]url.....[/Green]");
     _scrollSpeed = 0.5f;
     _scrollY = height; // start below screen
 }
@@ -74,6 +79,12 @@ void CreditsScreen::render(int xm, int ym, float a) {
         // use color-tag-aware drawing, centre by total width
         float lineWidth = Gui::getColoredWidth(font, line);
         Gui::drawColoredString(font, line, w/2 - lineWidth/2, (int)y, 255);
+        // underline hyperlink lines manually
+        if (line.find("http") != std::string::npos || line.find("discord.gg") != std::string::npos) {
+            float x0 = w/2 - lineWidth/2;
+            float y0 = y + font->lineHeight - 1;
+            this->fill(x0, y0, x0 + lineWidth, y0 + 1, 0xffffffff);
+        }
         y += lineHeight;
     }
 }
@@ -82,4 +93,26 @@ void CreditsScreen::buttonClicked(Button* button) {
     if (button->id == 1) {
         minecraft->setScreen(new OptionsScreen());
     }
+}
+
+void CreditsScreen::mouseClicked(int x, int y, int buttonNum) {
+    // map click to a line in the scrolling text
+    const float lineHeight = minecraft->font->lineHeight + 8;
+    for (size_t i = 0; i < _lines.size(); ++i) {
+        float lineY = _scrollY + i * lineHeight;
+        if (y >= lineY && y < lineY + lineHeight) {
+            const std::string& line = _lines[i];
+            size_t start = line.find("http");
+            if (start == std::string::npos)
+                start = line.find("discord.gg");
+            if (start != std::string::npos) {
+                // extract until space
+                size_t end = line.find(' ', start);
+                std::string url = line.substr(start, (end == std::string::npos) ? std::string::npos : end - start);
+                minecraft->platform()->openURL(url);
+                return;
+            }
+        }
+    }
+    super::mouseClicked(x, y, buttonNum);
 }

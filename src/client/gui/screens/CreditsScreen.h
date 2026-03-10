@@ -19,6 +19,7 @@ public:
     virtual void tick();
     void render(int xm, int ym, float a);
     void buttonClicked(Button* button);
+    virtual void mouseClicked(int x, int y, int buttonNum);
 private:
     Touch::THeader* bHeader;
     ImageButton* btnBack;
