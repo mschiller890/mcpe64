@@ -89,8 +89,7 @@ StartMenuScreen::StartMenuScreen()
 :	bHost(    2, "Start Game"),
 	bJoin(    3, "Join Game"),
 	bOptions( 4, "Options"),
-	bBuy(     5),
-	bTest(    9, "Create")
+	bBuy(     5)
 {
 	ImageDef def;
 	bJoin.width = 75;
@@ -119,7 +118,7 @@ void StartMenuScreen::init()
 	buttons.push_back(&bJoin);
 	buttons.push_back(&bOptions);
     
-    //buttons.push_back(&bTest);
+
 
 	tabButtons.push_back(&bHost);
 	tabButtons.push_back(&bJoin);
@@ -163,9 +162,6 @@ void StartMenuScreen::setupPositions() {
 	bOptions.y = yBase;
 	//#endif
 
-	//bTest.x = 0; //width - bTest.w;
-	//bTest.y = height - bTest.h;
-
 	// Center buttons
 	bJoin.x		= 0*buttonWidth + (int)(1*spacing);
 	bHost.x		= 1*buttonWidth + (int)(2*spacing);
@@ -176,9 +172,6 @@ void StartMenuScreen::setupPositions() {
 	bBuy.y = height - bBuy.height - 3;
 	bBuy.x = (width - bBuy.width) / 2;
     
-    bTest.x = 4;
-    bTest.y = height - bTest.height - 4;
-
 	copyrightPosX = width - minecraft->font->width(copyright) - 1;
 	versionPosX = (width - minecraft->font->width(version)) / 2;// - minecraft->font->width(version) - 2;
 }
@@ -189,11 +182,6 @@ void StartMenuScreen::tick() {
 
 void StartMenuScreen::buttonClicked(::Button* button) {
 
-	//if (button->id == bTest.id) {
-	//	minecraft->selectLevel("Broken", "Broken", 1317199248);
-	//	minecraft->hostMultiplayer();
-	//	minecraft->setScreen(new ProgressScreen());
-	//}
 	if (button->id == bHost.id)
 	{
 		#if defined(DEMO_MODE) || defined(APPLE_DEMO_PROMOTION)

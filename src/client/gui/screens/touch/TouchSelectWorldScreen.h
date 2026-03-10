@@ -112,9 +112,6 @@ private:
 
 	bool _mouseHasBeenUp;
 	bool _hasStartedLevel;
-	int _state;
-	static const int _STATE_DEFAULT = 0;
-	static const int _STATE_CREATEWORLD = 1;
 	//LevelStorageSource* levels;
 };
 };

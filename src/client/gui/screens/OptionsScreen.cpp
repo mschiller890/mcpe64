@@ -243,7 +243,6 @@ void OptionsScreen::generateOptionScreens() {
 		.addOptionItem(&Options::Option::VIEW_BOBBING, minecraft)
 		.addOptionItem(&Options::Option::AMBIENT_OCCLUSION, minecraft)
 		.addOptionItem(&Options::Option::ANAGLYPH, minecraft)
-		.addOptionItem(&Options::Option::RENDER_DISTANCE, minecraft)
 		.addOptionItem(&Options::Option::LIMIT_FRAMERATE, minecraft)
 		.addOptionItem(&Options::Option::VSYNC, minecraft)
 		.addOptionItem(&Options::Option::MUSIC, minecraft)

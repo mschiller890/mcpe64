@@ -283,8 +283,7 @@ SelectWorldScreen::SelectWorldScreen()
 	bHeader (0, "Select world"),
 	bWorldView(4, ""),
 	worldsList(NULL),
-	_hasStartedLevel(false),
-	_state(_STATE_DEFAULT)
+	_hasStartedLevel(false)
 {
 	bDelete.active = false;
 
@@ -349,9 +348,9 @@ void SelectWorldScreen::setupPositions() {
 void SelectWorldScreen::buttonClicked(Button* button)
 {
 	if (button->id == bCreate.id) {
-		if (_state == _STATE_DEFAULT && !_hasStartedLevel) {
-			minecraft->platform()->createUserInput(DialogDefinitions::DIALOG_CREATE_NEW_WORLD);
-			_state = _STATE_CREATEWORLD;
+		if (!_hasStartedLevel) {
+			std::string name = getUniqueLevelName("World");
+			minecraft->setScreen(new SimpleChooseLevelScreen(name));
 		}
 	}
 	if (button->id == bDelete.id) {
@@ -392,6 +391,7 @@ static char ILLEGAL_FILE_CHARACTERS[] = {
 
 void SelectWorldScreen::tick()
 {
+#if 0
 	if (_state == _STATE_CREATEWORLD) {
 		#if defined(RPI)
 			std::string levelId = getUniqueLevelName("World");
@@ -461,14 +461,15 @@ void SelectWorldScreen::tick()
 		worldsList->hasPickedLevel = false;
 		return;
 	}
+#endif
 
 	worldsList->tick();
 
 	if (worldsList->hasPickedLevel) {
 		if (worldsList->pickedIndex == worldsList->levels.size()) {
 			worldsList->hasPickedLevel = false;
-			minecraft->platform()->createUserInput(DialogDefinitions::DIALOG_CREATE_NEW_WORLD);
-			_state = _STATE_CREATEWORLD;
+			std::string name = getUniqueLevelName("World");
+			minecraft->setScreen(new SimpleChooseLevelScreen(name));
 		} else {
 			minecraft->selectLevel(worldsList->pickedLevel.id, worldsList->pickedLevel.name, LevelSettings::None());
 			minecraft->hostMultiplayer();

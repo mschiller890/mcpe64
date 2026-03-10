@@ -3,7 +3,7 @@
 
 #include "../../Screen.h"
 #include "../../components/LargeImageButton.h"
-
+#include "../../components/TextBox.h"
 
 class BuyButton: public ImageButton {
 	typedef ImageButton super;
@@ -37,7 +37,6 @@ private:
 	LargeImageButton bHost;
 	LargeImageButton bJoin;
 	LargeImageButton bOptions;
-	TButton bTest;
 	BuyButton bBuy;
 
 	std::string copyright;

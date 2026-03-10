@@ -2,6 +2,8 @@
 #define NET_MINECRAFT_CLIENT_GUI_SCREENS__DemoChooseLevelScreen_H__
 
 #include "ChooseLevelScreen.h"
+#include "../components/TextBox.h"
+#include "../components/Button.h"    // for Touch::THeader
 class Button;
 class ImageButton;
 
@@ -19,20 +21,23 @@ public:
 	void render(int xm, int ym, float a);
 
 	void buttonClicked(Button* button);
-	virtual void mouseClicked(int x, int y, int buttonNum);
 	bool handleBackEvent(bool isDown);
 	virtual void keyPressed(int eventKey);
 	virtual void keyboardNewChar(char inputChar);
+	virtual void mouseClicked(int x, int y, int buttonNum);
 
 private:
-	Button* bCreate;
+	Touch::THeader* bHeader;
+	Button* bGamemode;
 	ImageButton* bBack;
+	Button* bCreate;
 	bool hasChosen;
-	bool _isCreative;
 
 	std::string levelName;
-	std::string _nameInput;
-	int _cursorBlink;
+	int gamemode;
+
+	TextBox tLevelName;
+	TextBox tSeed;
 };
 
 #endif /*NET_MINECRAFT_CLIENT_GUI_SCREENS__DemoChooseLevelScreen_H__*/

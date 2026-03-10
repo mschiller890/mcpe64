@@ -31,9 +31,6 @@ public:
 	virtual void tick(Minecraft* minecraft);
 	
 public:
-	int w, h;
-	int x, y;
-
 	std::string hint;
 	std::string text;
 	int id;

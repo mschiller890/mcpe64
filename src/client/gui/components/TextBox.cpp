@@ -2,21 +2,22 @@
 #include "../Gui.h"
 #include "../../Minecraft.h"
 #include "../../../AppPlatform.h"
+#include "../../../platform/input/Mouse.h"
 
-// delegates to main constructor
+// delegate constructors
 TextBox::TextBox(int id, const std::string& msg)
-: TextBox(id, 0, 0, msg)
+ : TextBox(id, 0, 0, msg)
 {
 }
 
 TextBox::TextBox(int id, int x, int y, const std::string& msg)
-: TextBox(id, x, y, 24, Font::DefaultLineHeight + 4, msg)
+ : TextBox(id, x, y, 24, Font::DefaultLineHeight + 4, msg)
 {
 }
 
 TextBox::TextBox(int id, int x, int y, int w, int h, const std::string& msg)
-: GuiElement(true, true, x, y, w, Font::DefaultLineHeight + 4),
-  id(id), hint(msg), focused(false), blink(false), blinkTicks(0)
+ : GuiElement(true, true, x, y, w, h),
+   id(id), hint(msg), focused(false), blink(false), blinkTicks(0)
 {
 }
 
@@ -70,8 +71,11 @@ void TextBox::tick(Minecraft* minecraft) {
 
 void TextBox::render(Minecraft* minecraft, int xm, int ym) {
     // textbox like in beta 1.7.3
-    fill(x, y, x + width, y + height, 0xffa0a0a0);
-    fill(x + 1, y + 1, x + width - 1, y + height - 1, 0xff000000);
+    // change appearance when focused so the user can tell it's active
+    uint32_t bgColor = focused ? 0xffc0c0c0 : 0xffa0a0a0;
+    uint32_t borderColor = focused ? 0xffffff00 : 0xff000000;
+    fill(x, y, x + width, y + height, bgColor);
+    fill(x + 1, y + 1, x + width - 1, y + height - 1, borderColor);
 
     glEnable2(GL_SCISSOR_TEST);
     glScissor(
