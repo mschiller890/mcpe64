@@ -16,11 +16,11 @@
     #if defined(__APPLE__)
         #import <OpenGLES/ES1/gl.height>
         #import <OpenGLES/ES1/glext.height>
+    #elif defined(ANDROID)
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
     #else
         #include <glad/glad.h>
-        #if defined(ANDROID)
-            #include<GLES/glext.h>
-        #endif
     #endif
 #else
     // Uglyness to fix redeclaration issues

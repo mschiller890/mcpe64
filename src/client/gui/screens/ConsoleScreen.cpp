@@ -77,7 +77,8 @@ void ConsoleScreen::execute()
             static_cast<ServerSideNetworkHandler*>(minecraft->netCallback)->displayGameMessage(msg);
         } else if (minecraft->netCallback) {
             // Connected client: send ChatPacket to server; server echoes it back as MessagePacket
-            minecraft->raknetInstance->send(ChatPacket(msg));
+            ChatPacket chatPkt(msg);
+            minecraft->raknetInstance->send(chatPkt);
         } else {
             // Singleplayer: show locally only
             minecraft->gui.addMessage(msg);

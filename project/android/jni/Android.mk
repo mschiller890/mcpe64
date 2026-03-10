@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := minecraftpe
 LOCAL_SRC_FILES := ../../../src/main.cpp \
-                   ../../../src/main_android.cpp \
+                   ../../../src/main_android_java.cpp \
                    ../../../src/platform/audio/SoundSystemSL.cpp \
                    ../../../src/platform/input/Controller.cpp \
                    ../../../src/platform/input/Keyboard.cpp \
@@ -48,6 +48,10 @@ LOCAL_SRC_FILES := ../../../src/main.cpp \
 ../../../src/client/gui/screens/ScreenChooser.cpp \
 ../../../src/client/gui/screens/ArmorScreen.cpp \
 ../../../src/client/gui/screens/ChatScreen.cpp \
+../../../src/client/gui/screens/ChooseLevelScreen.cpp \
+../../../src/client/gui/screens/SimpleChooseLevelScreen.cpp \
+../../../src/client/gui/screens/ConsoleScreen.cpp \
+../../../src/client/gui/screens/UsernameScreen.cpp \
 ../../../src/client/gui/screens/ConfirmScreen.cpp \
 ../../../src/client/gui/screens/ChestScreen.cpp \
 ../../../src/client/gui/screens/DeathScreen.cpp \
@@ -245,7 +249,9 @@ LOCAL_SRC_FILES := ../../../src/main.cpp \
 ../../../src/world/level/tile/entity/FurnaceTileEntity.cpp \
 ../../../src/world/phys/HitResult.cpp
 
-LOCAL_CFLAGS := -Wno-psabi $(LOCAL_CFLAGS)
+LOCAL_CFLAGS := -Wno-psabi -DPLATFORM_ANDROID -DPRE_ANDROID23 -Wno-narrowing $(LOCAL_CFLAGS)
+LOCAL_CPPFLAGS := -std=c++11
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../src
 
 #LOCAL_CFLAGS := -DANDROID_PUBLISH -DDEMO_MODE $(LOCAL_CFLAGS)
 #LOCAL_CFLAGS := -DANDROID_PUBLISH $(LOCAL_CFLAGS)

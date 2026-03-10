@@ -64,7 +64,8 @@
 		TerminateThread(m_threadHandle, 0);
 	#endif
 	#if defined(LINUX) || defined(ANDROID) || defined(__APPLE__) || defined(POSIX)
-		pthread_join(m_thread, NULL);
+		// Thread was created detached; pthread_join on a detached thread is undefined
+		// and causes SIGABRT when the pthread_t is no longer valid.
 		pthread_attr_destroy(&m_attributes);
 	#endif
 	}

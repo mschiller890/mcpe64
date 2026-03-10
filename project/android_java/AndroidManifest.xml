@@ -6,23 +6,26 @@
       >
       <!-- android:installLocation="preferExternal" -->
 
-    <uses-sdk   android:targetSdkVersion="8" android:minSdkVersion="7"/>
+    <uses-sdk   android:targetSdkVersion="34" android:minSdkVersion="21"/>
 
     <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application	android:icon="@drawable/icon"
     				android:label="@string/app_name"
+    				android:hardwareAccelerated="true"
+    				android:extractNativeLibs="true"
     				>
 
         <activity   android:name="com.mojang.minecraftpe.Minecraft_Market"
                     android:label="@string/app_name_short"
-                    android:configChanges="orientation|keyboardHidden"
+                    android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
                     android:screenOrientation="landscape"
-                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:exported="true">
 
             <meta-data  android:name="android.app.lib_name"
                         android:value="minecraftpe" />
@@ -32,7 +35,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name="com.mojang.minecraftpe.MainMenuOptionsActivity"></activity>
+        <activity android:name="com.mojang.minecraftpe.MainActivity"
+                    android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+                    android:screenOrientation="landscape"
+                    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                    android:exported="false">
+        </activity>
+		<activity android:name="com.mojang.minecraftpe.MainMenuOptionsActivity" android:exported="false"></activity>
 
         <meta-data android:name="xperiaplayoptimized_content" android:resource="@string/xperiaplayoptimized_content" />
         <meta-data android:name="game_display_name" android:resource="@string/app_name" />

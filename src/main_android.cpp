@@ -1,5 +1,6 @@
 #include "App.h"
 #include "AppPlatform_android.h"
+#include <android_native_app_glue.h>
 
 // Horrible, I know. / A
 #ifndef MAIN_CLASS
@@ -38,7 +39,7 @@ static void setupExternalPath(struct android_app* state, MAIN_CLASS* app)
     const char* str = env->GetStringUTFChars((jstring) pathString, NULL);
     app->externalStoragePath = str;
 	app->externalCacheStoragePath = str;
-    LOGI(str);
+    LOGI("%s", str);
 
     env->ReleaseStringUTFChars((jstring)pathString, str);
 

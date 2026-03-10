@@ -22,6 +22,8 @@ public:
     virtual void keyPressed(int eventKey);
     virtual void keyboardNewChar(char inputChar);
     virtual bool handleBackEvent(bool isDown) { return true; } // block back/escape
+    virtual void removed();
+    virtual void mouseClicked(int x, int y, int button);
 
 protected:
     virtual void buttonClicked(Button* button);

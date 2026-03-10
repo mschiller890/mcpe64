@@ -104,6 +104,7 @@ public:
 
     int getScreenWidth() { return _screenWidth; }
     int getScreenHeight() { return _screenHeight; }
+    void setScreenDimensions(int w, int h) { _screenWidth = w; _screenHeight = h; }
 
     // Note, this has to be called from the main thread (e.g. do it from JNI_onLoad)
     // Somewhere between calling this, and calling the AppPlatform methods,
@@ -192,14 +193,20 @@ public:
     //        be rewritten later on anyway
     int initConsts() {
 
+        LOGI("initConsts: start\n");
         JVMAttacher ta(_vm);
         JNIEnv* env = ta.getEnv();
 
+        LOGI("initConsts: getting method IDs\n");
         jmethodID fWidth = env->GetMethodID( _activityClass, "getScreenWidth", "()I");
+        LOGI("initConsts: got fWidth=%p\n", fWidth);
         jmethodID fHeight = env->GetMethodID( _activityClass, "getScreenHeight", "()I");
+        LOGI("initConsts: got fHeight=%p, calling getScreenWidth\n", fHeight);
 
         _screenWidth = env->CallIntMethod(instance, fWidth);
+        LOGI("initConsts: screenWidth=%d, calling getScreenHeight\n", _screenWidth);
         _screenHeight = env->CallIntMethod(instance, fHeight);
+        LOGI("initConsts: screenHeight=%d, done\n", _screenHeight);
     }
 
     void tick() {
@@ -376,8 +383,9 @@ public:
         JVMAttacher ta(_vm);
         JNIEnv* env = ta.getEnv();
 
+        std::string path = textureFolder ? "images/" + filename : filename;
         jintArray arr = (jintArray)env->CallObjectMethod(
-            instance, _getImageData, env->NewStringUTF(filename.c_str()));
+            instance, _getImageData, env->NewStringUTF(path.c_str()));
 
         if (!arr)
             return TextureData();

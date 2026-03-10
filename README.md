@@ -14,11 +14,28 @@ I've done some bad and pointless changes to the code so if someone could improve
 - [x] Implementing options 
 - [ ] Controller support
 - [ ] Minecraft server hosting
-- [ ] Android build support
+- [x] Android build support
+    - [ ] Touch control improvements
+    - [ ] Screen fixes
 - [x] Better F3
 - [ ] Performance optimalizations
 
 ## How to Build
+### Android
+1. Download r14b Android NDK
+```
+# Full build (NDK + Java + APK + install)
+C:\apkbuild\build.ps1
+
+# Skip NDK recompile (Java/assets changed only)
+C:\apkbuild\build.ps1 -NoJava
+
+# Skip Java recompile (C++ changed only)  
+C:\apkbuild\build.ps1 -NoCpp
+
+# Only repackage + install (no recompile at all)
+C:\apkbuild\build.ps1 -NoBuild
+```
 
 ## Credits
 Original repository:  

@@ -3,6 +3,9 @@
 
 //#include "main_android_java.h"
 #include "platform/input/Multitouch.h"
+#include <unistd.h>
+#include <sys/syscall.h>
+#define gettid() ((int)syscall(SYS_gettid))
 
 // Horrible, I know. / A
 #ifndef MAIN_CLASS
@@ -39,7 +42,7 @@ static void setupExternalPath(JNIEnv* env, MAIN_CLASS* app)
     const char* str = env->GetStringUTFChars((jstring) pathString, NULL);
     app->externalStoragePath = str;
 	app->externalCacheStoragePath = str;
-    LOGI(str);
+    LOGI("%s", str);
 
     env->ReleaseStringUTFChars((jstring)pathString, str);
 }
@@ -57,6 +60,7 @@ static void pointerMove(int pointerId, int x, int y) {
 
 static App* gApp = 0;
 static AppContext gContext;
+static bool g_inNativeOnCreate = false;
 
 extern "C" {
 JNIEXPORT jint JNICALL
@@ -81,34 +85,53 @@ Java_com_mojang_minecraftpe_MainActivity_nativeUnregisterThis(JNIEnv* env, jobje
 }
 
 JNIEXPORT void JNICALL
-Java_com_mojang_minecraftpe_MainActivity_nativeOnCreate(JNIEnv* env) {
-    LOGI("@nativeOnCreate\n");
+Java_com_mojang_minecraftpe_MainActivity_nativeOnCreate(JNIEnv* env, jobject thiz, jint screenWidth, jint screenHeight) {
+    LOGI("@nativeOnCreate w=%d h=%d\n", (int)screenWidth, (int)screenHeight);
+    g_inNativeOnCreate = true;
 
     appPlatform.instance = g_pActivity;
-    appPlatform.initConsts();
+    appPlatform.setScreenDimensions((int)screenWidth, (int)screenHeight);
+    LOGI("nativeOnCreate: screen set, no initConsts needed\n");
     gContext.doRender = false;
     gContext.platform = &appPlatform;
 
+    LOGI("nativeOnCreate: creating gApp\n");
     gApp = new MAIN_CLASS();
+    LOGI("nativeOnCreate: gApp=%p\n", gApp);
     setupExternalPath(env, (MAIN_CLASS*)gApp);
+    if (env->ExceptionOccurred()) {
+        LOGI("nativeOnCreate: exception after setupExternalPath!\n");
+        env->ExceptionDescribe();
+        env->ExceptionClear();
+    }
+    LOGI("nativeOnCreate: done\n");
+    g_inNativeOnCreate = false;
     //gApp->init(gContext);
 }
 
+static int s_surfaceCreatedCount = 0;
+
 JNIEXPORT void JNICALL
 Java_com_mojang_minecraftpe_GLRenderer_nativeOnSurfaceCreated(JNIEnv* env) {
-    LOGI("@nativeOnSurfaceCreated\n");
+    s_surfaceCreatedCount++;
+    if (g_inNativeOnCreate) {
+        // Skip re-entrant surface callbacks that fire during nativeOnCreate
+        return;
+    }
+    LOGI("@nativeOnSurfaceCreated #%d tid=%d\n", s_surfaceCreatedCount, (int)gettid());
 
      if (gApp) {
-//          gApp->setSize( gContext.platform->getScreenWidth(),
-//                         gContext.platform->getScreenHeight(),
-//                         gContext.platform->isTouchscreen());
-
          // Don't call onGraphicsReset the first time
-        if (gApp->isInited())
+        if (gApp->isInited()) {
+            LOGI("nativeOnSurfaceCreated: calling onGraphicsReset\n");
             gApp->onGraphicsReset(gContext);
+        }
 
-        if (!gApp->isInited())
+        if (!gApp->isInited()) {
+            LOGI("nativeOnSurfaceCreated: calling init\n");
             gApp->init(gContext);
+            LOGI("nativeOnSurfaceCreated: init done, isInited=%d\n", (int)gApp->isInited());
+        }
      }
 }
 
@@ -157,6 +180,11 @@ JNIEXPORT void JNICALL
 Java_com_mojang_minecraftpe_MainActivity_nativeOnKeyDown(JNIEnv* env, jclass cls, jint keyCode) {
     LOGI("@nativeOnKeyDown: %d\n", keyCode);
     Keyboard::feed(keyCode, true);
+}
+JNIEXPORT void JNICALL
+Java_com_mojang_minecraftpe_MainActivity_nativeTextChar(JNIEnv* env, jclass cls, jint unicodeChar) {
+    if (unicodeChar > 0 && unicodeChar < 128)
+        Keyboard::feedText((char)unicodeChar);
 }
 JNIEXPORT void JNICALL
 Java_com_mojang_minecraftpe_MainActivity_nativeOnKeyUp(JNIEnv* env, jclass cls, jint keyCode) {

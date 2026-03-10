@@ -5,6 +5,7 @@
 #include "../Font.h"
 #include "../components/Button.h"
 #include "../../../platform/input/Keyboard.h"
+#include "../../../AppPlatform.h"
 
 UsernameScreen::UsernameScreen()
 :   _btnDone(0, "Done"),
@@ -56,6 +57,26 @@ void UsernameScreen::keyboardNewChar(char inputChar)
     if (_input.size() < 16 && inputChar >= 32 && inputChar < 127)
         _input += inputChar;
     _btnDone.active = !_input.empty();
+}
+
+void UsernameScreen::mouseClicked(int x, int y, int button)
+{
+    int cx = width / 2;
+    int cy = height / 2;
+    int boxW = 160;
+    int boxH = 18;
+    int boxX = cx - boxW / 2;
+    int boxY = cy - 5;
+    if (x >= boxX && x <= boxX + boxW && y >= boxY && y <= boxY + boxH) {
+        minecraft->platform()->showKeyboard();
+    } else {
+        super::mouseClicked(x, y, button);
+    }
+}
+
+void UsernameScreen::removed()
+{
+    minecraft->platform()->hideKeyboard();
 }
 
 void UsernameScreen::buttonClicked(Button* button)

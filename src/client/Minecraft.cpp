@@ -1210,7 +1210,12 @@ void Minecraft::_reloadInput() {
 #ifndef STANDALONE_SERVER
 	delete inputHolder;
 
-	if (useTouchscreen() && !PLATFORM_DESKTOP) {
+#ifdef PLATFORM_DESKTOP
+	const bool useTouchHolder = false;
+#else
+	const bool useTouchHolder = useTouchscreen();
+#endif
+	if (useTouchHolder) {
 		inputHolder = new TouchInputHolder(this, &options);
 	} else {
 		#if defined(ANDROID) || defined(__APPLE__) 

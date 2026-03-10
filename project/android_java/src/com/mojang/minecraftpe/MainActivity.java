@@ -40,7 +40,6 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Display;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -58,6 +57,8 @@ public class MainActivity extends Activity {
     
     private GLView _glView;
     public float invScale = 1.0f;// / 1.5f;
+    private int _screenWidth = 0;
+    private int _screenHeight = 0;
     
     Vector<MotionEvent> _touchEvents = new Vector<MotionEvent>();
     Vector<KeyEvent> _keyEvents = new Vector<KeyEvent>();
@@ -67,8 +68,13 @@ public class MainActivity extends Activity {
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         super.onCreate(savedInstanceState);
         nativeRegisterThis();
-        
-        nativeOnCreate();
+
+        // Cache screen dimensions once to avoid re-entrant getDisplayMetrics() callbacks
+        android.util.DisplayMetrics _dm = getResources().getDisplayMetrics();
+        _screenWidth = Math.max(_dm.widthPixels, _dm.heightPixels);
+        _screenHeight = Math.min(_dm.widthPixels, _dm.heightPixels);
+
+        nativeOnCreate(_screenWidth, _screenHeight);
 
         _glView = new GLView(getApplication(), this);
         //_glView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
@@ -105,15 +111,22 @@ public class MainActivity extends Activity {
     }
 
     public boolean isTouchscreen() { return true; }
+    public boolean supportsTouchscreen() { return true; }
     static public boolean isXperiaPlay() { return false; }
 
     static private boolean _isPowerVr = false;
     public void setIsPowerVR(boolean status) { MainActivity._isPowerVr = status; }
     static public boolean isPowerVR() { return _isPowerVr; }
     
+    @SuppressWarnings("deprecation")
     public void vibrate(int milliSeconds) {
-    	Vibrator v = (Vibrator)this.getSystemService(VIBRATOR_SERVICE);
-    	v.vibrate(milliSeconds);
+    	Vibrator v = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+    	if (android.os.Build.VERSION.SDK_INT >= 26) {
+    		v.vibrate(android.os.VibrationEffect.createOneShot(milliSeconds,
+    				android.os.VibrationEffect.DEFAULT_AMPLITUDE));
+    	} else {
+    		v.vibrate(milliSeconds);
+    	}
     }
 
     private void createAlertDialog(boolean hasOkButton, boolean hasCancelButton, boolean preventBackKey) {
@@ -144,9 +157,16 @@ public class MainActivity extends Activity {
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-    	// TODO Auto-generated method stub
-    	//System.out.println("Focus has changed. Has Focus? " + hasFocus);
     	super.onWindowFocusChanged(hasFocus);
+    	if (hasFocus) {
+    		getWindow().getDecorView().setSystemUiVisibility(
+    				View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+    				| View.SYSTEM_UI_FLAG_FULLSCREEN
+    				| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+    				| View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+    				| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+    				| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+    	}
     }
 
     @Override
@@ -184,9 +204,12 @@ public class MainActivity extends Activity {
 			return;
 		}
 
-    	if (event.getAction() == KeyEvent.ACTION_DOWN)
+    	if (event.getAction() == KeyEvent.ACTION_DOWN) {
     		nativeOnKeyDown(keyCode);
-    	else if (event.getAction() == KeyEvent.ACTION_UP)
+    		int unicodeChar = event.getUnicodeChar(event.getMetaState());
+    		if (unicodeChar > 0)
+    			nativeTextChar(unicodeChar);
+    	} else if (event.getAction() == KeyEvent.ACTION_UP)
         	nativeOnKeyUp(keyCode);
     }
 
@@ -347,22 +370,15 @@ public class MainActivity extends Activity {
     }
     
     public int getScreenWidth() {
-    	Display display = ((WindowManager)this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-    	int out = Math.max(display.getWidth(), display.getHeight());
-    	//System.out.println("getwidth: " + out);
-    	return out;
+    	return _screenWidth;
     }
     
     public int getScreenHeight() {
-    	Display display = ((WindowManager)this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-    	int out = Math.min(display.getWidth(), display.getHeight());
-    	//System.out.println("getheight: " + out);
-    	return out;
+    	return _screenHeight;
     }
 
     public float getPixelsPerMillimeter() {
-   	    DisplayMetrics metrics = new DisplayMetrics();
-   	    getWindowManager().getDefaultDisplay().getMetrics(metrics);
+   	    android.util.DisplayMetrics metrics = getResources().getDisplayMetrics();
    	    return (metrics.xdpi + metrics.ydpi) * 0.5f / 25.4f;
     }
 
@@ -465,8 +481,8 @@ public class MainActivity extends Activity {
 
     	        MainActivity.this.mDialog.show();
     	        MainActivity.this.mDialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    	        MainActivity.this.mDialog.getWindow().setLayout(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
-    	        //MainActivity.this.getWindow().setLayout(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
+    	        MainActivity.this.mDialog.getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+    	        //MainActivity.this.getWindow().setLayout(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
     	    }
     	});
     }
@@ -515,6 +531,11 @@ public class MainActivity extends Activity {
     }
 
     public void buyGame() {}
+
+    public int getKeyFromKeyCode(int keyCode, int metaState, int deviceId) {
+        android.view.KeyCharacterMap kcm = android.view.KeyCharacterMap.load(deviceId);
+        return kcm.get(keyCode, metaState);
+    }
 
     public String getPlatformStringVar(int id) {
     	if (id == 0) return android.os.Build.MODEL;
@@ -604,10 +625,11 @@ public class MainActivity extends Activity {
     //
     native void nativeRegisterThis();
     native void nativeUnregisterThis();
-    native static void nativeOnCreate();
+    native static void nativeOnCreate(int screenWidth, int screenHeight);
     native static void nativeOnDestroy();
     native static void nativeOnKeyDown(int key);
     native static void nativeOnKeyUp(int key);
+    native static void nativeTextChar(int unicodeChar);
     native static boolean nativeHandleBack(boolean isDown);
     native static void nativeMouseDown(int pointerId, int buttonId, float x, float y);
     native static void nativeMouseUp(int pointerId, int buttonId, float x, float y);
