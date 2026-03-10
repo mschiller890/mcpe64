@@ -22,7 +22,7 @@ I've done some bad and pointless changes to the code so if someone could improve
 
 ## How to Build
 ### Android
-1. Download r14b Android NDK
+Download r14b Android NDK and run `build.ps1`:
 ```
 # Full build (NDK + Java + APK + install)
 C:\apkbuild\build.ps1
