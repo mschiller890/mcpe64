@@ -747,20 +747,6 @@ void Minecraft::tickInput() {
 					player->noPhysics = options.isFlying;
 				}
 
-				// if (key == Keyboard::KEY_T) {
-				// 	options.thirdPersonView = !options.thirdPersonView;
-				// 	/*
-				// 	ImprovedNoise noise;
-				// 	for (int i = 0; i < 16; ++i)
-				// 		printf("%d\t%f\n", i, noise.grad2(i, 3, 8));
-				// 	*/
-				// }
-
-				if (key == Keyboard::KEY_O) {
-					useAmbientOcclusion = !useAmbientOcclusion;
-					options.ambientOcclusion = useAmbientOcclusion;
-					levelRenderer->allChanged();
-				}
 
 				if (key == Keyboard::KEY_L)
 					options.viewDistance = (options.viewDistance + 1) % 4;
@@ -898,9 +884,19 @@ void Minecraft::tickInput() {
 		prevMouseDownLeft = Mouse::isButtonDown(MouseAction::ACTION_LEFT);
 
 		// Build and use/interact is on same button
+		// USPESHNO spizheno
+		static int buildHoldTicks = 0;
 		if (Mouse::isButtonDown(MouseAction::ACTION_RIGHT)) {
 			BuildActionIntention bai(BuildActionIntention::BAI_BUILD | BuildActionIntention::BAI_INTERACT);
 			handleBuildAction(&bai);
+			if (buildHoldTicks >= 5) buildHoldTicks = 0;
+
+			if (++buildHoldTicks == 1) {
+				BuildActionIntention bai(BuildActionIntention::BAI_BUILD | BuildActionIntention::BAI_INTERACT);
+				handleBuildAction(&bai);
+			}
+		} else {
+			buildHoldTicks = 0;
 		}
 	}
 

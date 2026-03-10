@@ -25,6 +25,12 @@ void Screen::render( int xm, int ym, float a )
 		Button* button = buttons[i];
 		button->render(minecraft, xm, ym);
 	}
+
+	// render any text boxes after buttons
+	for (unsigned int i = 0; i < textBoxes.size(); i++) {
+		TextBox* textbox = textBoxes[i];
+		textbox->render(minecraft, xm, ym);
+	}
 }
 
 void Screen::init( Minecraft* minecraft, int width, int height )
@@ -157,6 +163,12 @@ void Screen::keyPressed( int eventKey )
 		minecraft->setScreen(NULL);
 		//minecraft->grabMouse();
 	}
+
+	// pass key events to any text boxes first
+	for (auto& textbox : textBoxes) {
+		textbox->handleKey(eventKey);
+	}
+
 	if (minecraft->useTouchscreen())
 		return;
 
@@ -209,6 +221,11 @@ void Screen::mouseClicked( int x, int y, int buttonNum )
 */
 			}
 		}
+	}
+
+	// let textboxes see the click regardless
+	for (auto& textbox : textBoxes) {
+		textbox->mouseClicked(minecraft, x, y, buttonNum);
 	}
 }
 

@@ -301,4 +301,5 @@ bool StartMenuScreen::handleBackEvent( bool isDown ) {
 	return true;
 }
 
-};
+} // namespace Touch
+
